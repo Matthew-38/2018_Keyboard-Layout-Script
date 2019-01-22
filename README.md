@@ -27,7 +27,7 @@ On ajoute la paramettre "reset" si on veut mettre tous les claviers à la dispos
 
 
 # Conclusion
-Ce projet avait un but utile et pratique, mais ça m'a permit aussi d'approfondir mes conaissances en usage des scripts Python sous terminal BASH, avec des paramettres et visa-versa : faire des appels à des programmes externe depuis Python. 
+Ce projet avait un but utile et pratique, mais ça m'a aussi permit d'approfondir mes conaissances en usage des scripts Python sous terminal BASH, avec des paramettres et visa-versa : faire des appels à des programmes externe depuis Python. 
 
 Ce code est libre d'access à tout le monde. Faites ce que vous voulez avec.
 Bonne journée
