@@ -10,13 +10,17 @@ Ce logiciel ne marche pas sous Linux. Heureusement il existe une programme setxk
 
 # Ma Solution
 Mon scripte contient une liste de claviers à configurer (à vous de les customiser), et pour chacun fait la suite:
+
 	S'il y a pas de "id" fourni (False), le cherche avec xinput à partir du nom "name" fourni.
+
 	Change la disposition du clavier à celle fournie.
 
 
 # Usage
 Dans un terminal BASH:
+
 	$Python3 KeyboardSetLayouts.py [reset]
+
 On ajoute la paramettre "reset" si on veut mettre tous les claviers à la disposition de défaut. Sinon il n'y a pas de paramettre à fournir
 
 
