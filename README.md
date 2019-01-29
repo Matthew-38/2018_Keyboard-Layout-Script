@@ -8,15 +8,18 @@ For many polyglots, as well as people who work in an international context, it i
 
 There already exists a solution for Windows - using a little program called "Right Keyboard" (see link at the end), which changes automatically the layout once it detects activity on the other keyboard. However there is latency and the first button pressed on the new keyboard is with the layout of the former. 
 
-My little cript only works on Linux. Fortunately there already exists a command line program called setxkbmap which allows us to assign a layout to a specific USB device which it uses (with an ID number). But the ID number is not stable. If you unplug and replug the keyboard, the ID changes (even if you plug it into the same port as before).
+My little script only works on Linux. Fortunately there already exists a command line program called setxkbmap which allows us to assign a layout to a specific USB device which it uses (with an ID number). But the ID number is not stable. If you unplug and replug the keyboard, the ID changes (even if you plug it into the same port as before).
 
 # My Solution
 My script contains a list of keyboards to configure (you can modify this to suit your case), and for each one it does the following:
-	If there is not an "ID" supplied (False), it looks for it by calling xinput searching for the [name] supplied.
-	Changes the layour of the keyboard corresponding to this ID to the layout supplied.
+
+1. If there is not an "ID" supplied (False), it looks for it by calling xinput searching for the [name] supplied.
+
+2. Changes the layour of the keyboard corresponding to this ID to the layout supplied.
 	
 # Usage
 In a BASH terminal: 
+
 	$Python3 KeyboardSetLayouts.py [reset]
 
 You can add the parameter "reset" if you want to set all the keyboards to the default (supplied constant in the file). Otherwise there are no paramaters here. 
@@ -47,9 +50,9 @@ Ce logiciel ne marche pas sous Linux. Heureusement il existe une programme setxk
 # Ma Solution
 Mon scripte contient une liste de claviers à configurer (à vous de les customiser), et pour chacun fait la suite:
 
-	S'il y a pas de "id" fourni (False), le cherche avec xinput à partir du nom "name" fourni.
+1. S'il y a pas de "id" fourni (False), le cherche avec xinput à partir du nom "name" fourni.
 
-	Change la disposition du clavier à celle fournie.
+2. Change la disposition du clavier à celle fournie.
 
 
 # Usage
